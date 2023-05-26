@@ -1,6 +1,4 @@
 'use strict'
-
-
 import { questions } from "./date.js";
 let quizContainer = document.querySelector(".questions-container")
 let form;
@@ -59,25 +57,24 @@ questions.map((item, index) => {
     <h1> ${index + 1}-Savol. ${item.question}</h1>
         <label value="${item.variants[0]}" for="${item.name}">
             <input value="${item.variants[0]}" type="radio" name="${item.name}" />
-            <span>${item.variants[0]}</span>
+            <span id="${item.name}">${item.variants[0]}</span>
         </label>
          <label value="${item.variants[1]}" for="${item.name}">
            <input value="${item.variants[1]}" type="radio" name="${item.name}" />
-           <span>${item.variants[1]}</span>
+           <span id="${item.name}">${item.variants[1]}</span>
          </label>
          <label value="${item.variants[2]}" for="${item.name}">
            <input value="${item.variants[2]}" type="radio" name="${item.name}" />
-           <span>${item.variants[2]}</span>
+           <span id="${item.name}">${item.variants[2]}</span>
          </label>
          <label value="${item.variants[3]}" for="${item.name}">
            <input value="${item.variants[3]}" type="radio" name="${item.name}" />
-           <span>${item.variants[3]}</span>
+           <span id="${item.name}">${item.variants[3]}</span>
          </label>
          <label value="${item.variants[4]}" for="${item.name}">
            <input value="${item.variants[4]}" type="radio" name="${item.name}" />
-           <span>${item.variants[4]}</span>
+           <span id="${item.name}">${item.variants[4]}</span>
          </label>
-
     </form >
     `
   quizContainer.insertAdjacentHTML("beforeend", form);
@@ -115,7 +112,6 @@ endBtn.addEventListener("click", function () {
   else { resultText.textContent = `Sizda ${trues} togri javob va ${falsy} notogri javob bor` }
   modal.classList.add("modal-top")
 })
-
 
 let xBtn = document.querySelector(".x")
 xBtn.addEventListener("click", () => {
