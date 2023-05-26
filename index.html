@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.css">
+   <title>Quiz test</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="start">
+         <button class="start-btn">START QUIZ</button>
+      </div>
+      <div class="test-box none">
+         <nav class="title">
+            <h1 class="quiz-title">Questions</h1>
+         </nav>
+         <div class="timer">
+            <h2 class="hour">00:</h2>
+            <h2 class="minut">00:</h2>
+            <h2 class="second">00</h2>
+         </div>
+         <div class="slider">
+            <div class="questions-container"></div>
+         </div>
+         <div class="btns">
+            <button class="prev">Prev</button>
+            <button id="end">END</button>
+            <button class="next">Next</button>
+         </div>
+      </div>
+      <div class="modal">
+         <span class="x"><a href="./index.html">X</a></span>
+         <h2 class="result"></h2>
+         <button class="restart"><a href="./index.html">RES</a></button>
+      </div>
+   </div>
+   <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

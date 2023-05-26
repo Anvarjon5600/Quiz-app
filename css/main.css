@@ -1,0 +1,168 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+ul,
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+body {
+   background: url(../img/bambuu.jpg) no-repeat;
+   background-size: cover;
+}
+
+.container {
+   width: 500px;
+   margin: 30px auto;
+}
+
+.btns {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+button {
+   outline: none;
+   box-shadow: inset 0 0 20px #fff;
+   cursor: pointer;
+   padding: 10px 20px;
+   border: 2px solid #fff;
+   background: inherit;
+}
+
+.questions-container {
+   padding: 20px;
+   width: 100%;
+}
+.btns,
+.title {
+   text-align: center;
+   padding: 20px;
+   box-shadow: inset 0 0 50px #fff;
+   width: 100%;
+}
+
+.slider {
+   box-shadow: inset 0 0 150px #fff;
+   width: 500px;
+   overflow: hidden;
+}
+
+.questions-container {
+   position: relative;
+   left: 0;
+   width: 4850px;
+   display: flex;
+   align-items: center;
+   transition: 0.8s ease-in-out;
+}
+
+.quiz-form {
+   padding: 10px;
+   width: 500px;
+   display: flex;
+   gap: 15px;
+   align-items: start;
+   flex-direction: column;
+   font-weight: 700;
+}
+
+.quiz-form input {
+   cursor: pointer;
+}
+
+.modal {
+   color: #fff;
+   text-align: center;
+   line-height: 40px;
+   box-shadow: inset 0 0 100px #fff;
+   width: 350px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   backdrop-filter: blur(100px);
+   position: absolute;
+   right: auto;
+   top: -300px;
+   padding: 30px;
+   width: 50%;
+   height: 200px;
+   transform: translate(-12.5%);
+   transition: 0.8s ease-in-out;
+}
+
+.modal h2 {
+   width: 50%;
+}
+
+.modal-top {
+   top: 200px;
+}
+
+.x {
+   cursor: pointer;
+   border-radius: 50%;
+   position: absolute;
+   top: 10px;
+   right: 20px;
+}
+
+#end {
+   position: absolute;
+   top: 40px;
+   right: 40px;
+   color: #fff;
+}
+
+.modal {
+   padding: 20px;
+}
+
+.restart a {
+   color: #fff;
+}
+
+.timer {
+   width: 100%;
+   padding: 10px;
+   box-shadow: inset 0 0 60px #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.test-box {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.start {
+   position: relative;
+   top: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.none {
+   display: none;
+}
+
+.start-btn {
+   font-size: 30px;
+   color: #000;
+}
