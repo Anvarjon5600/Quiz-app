@@ -1,5 +1,6 @@
 'use strict'
 
+
 import { questions } from "./date.js";
 let quizContainer = document.querySelector(".questions-container")
 let form;
@@ -11,7 +12,6 @@ let minutContent = document.querySelector('.minut')
 let secundContent = document.querySelector('.second')
 let min = 5;
 let secund = 0;
-
 
 document.querySelector('.start-btn').addEventListener('click', (e) => {
   e.target.classList.add('none')
@@ -93,7 +93,6 @@ questions.map((item, index) => {
         results[index] = { ans: right, id: index + 1 }
       } else results.push(obj);
       if (results.length === 10) {
-        console.log('tugadi')
         nextBtn.textContent = 'End'
       }
     })
